@@ -4,12 +4,14 @@
 
 The application itself is pretty simple.
 When it's launched, it will print the result of the experiment.
+
 ![](./screenshots/experiment.png)
 
 
 The experiment is pretty simple, it will choose 25 atoms and will print out the bonds between them.
 
 It will then ask you the lab_key, 
+
 ![](./screenshots/ask_lab_key.png)
 
 if you submit the good lab_key, you get a flag.
@@ -21,6 +23,7 @@ and it's only when you submit the good lab key
 
 so i continue my way up the code, and take a look at the lab_key
 it's a string of 25 random printable characters generated randomly, using a secure generator.
+
 ![](./screenshots/labkey_generation.png)
 
 Continuing my tour of the code, i see that the labkey is used once
