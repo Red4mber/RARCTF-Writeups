@@ -167,7 +167,7 @@ Le code a été ajouté dans la fonction `main` juste avant la boucle for qui de
 ```
 Ajouter ceci cargo.toml, afin d'inclure les nouvelles dépendances
 ```toml
-serde_json = "0.8"
+serde_json = "1.0"
 arrayvec = {version = "0.7", features = ["serde"]}
 ```
 On compile avec la commande `cargo build`

@@ -155,7 +155,7 @@ I quickly wrote some code i added to the program to generate a json file contain
 ```
 Add this to cargo.toml
 ```toml
-serde_json = "0.8"
+serde_json = "1.0"
 arrayvec = {version = "0.7", features = ["serde"]}
 ```
 This big piece of code is quite big, but it's mostly the code of the experiment, copy and pasted, but rather than printing the results in stdout, i store that in a structure that i will serialize in a json file
