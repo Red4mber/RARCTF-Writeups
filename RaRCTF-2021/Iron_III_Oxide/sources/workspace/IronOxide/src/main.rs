@@ -120,7 +120,9 @@ fn main() -> Result<(), Box<dyn Error>>  {
         }
     }
 
-    //////// TEST
+///
+/// 
+/// 
     use std::collections::HashMap;
     use serde::Serialize;
     use arrayvec::ArrayString;
@@ -130,7 +132,7 @@ fn main() -> Result<(), Box<dyn Error>>  {
     let mut genbonds = HashMap::new();
 
     #[derive(Serialize)]
-    struct s_Bond {
+    struct sBond {
         BondType: ArrayString<16>,
         Diff1: i16,
         Diff2: ArrayString<8>,
@@ -160,18 +162,18 @@ fn main() -> Result<(), Box<dyn Error>>  {
             }
             let mut d = ArrayString::<8>::new();
             d.push_str(&format!("{:.2}", difference2));
-            let l = s_Bond {
+            let l = sBond {
                 BondType: s,
                 Diff1: difference1,
                 Diff2: d,
             };
             abonds.insert(second.element.atomicnumber, l);
         }
-        genbond.insert(a.element.atomicnumber, abonds);
+        genbonds.insert(a.element.atomicnumber, abonds);
     }
-    let serialized = serde_json::to_string(&genbond).unwrap();
+    let serialized = serde_json::to_string(&genbonds).unwrap();
     ::serde_json::to_writer(&File::create("data.json")?, &serialized)?;
-/// TEST
+/// 
 /// 
 /// 
 
