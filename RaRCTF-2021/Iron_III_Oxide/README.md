@@ -6,6 +6,7 @@ No exploits, no pwn or web shenanigans, just me trying to figure out how can i g
 I wrote everything in both english and french, just click on the writeup you want, i guess you're smart enough to do that
 
 [English writeup](./writeup_en.md)
+
 [French writeup](./writeup_fr.md)
 
 All the sources can be found in [./sources](./sources)
@@ -21,6 +22,7 @@ Cette fois ci, pas d'exploits, de pwn, de web quoique ce soit, juste moi qui che
 j'ai tout écrit en anglais et en français, clique sur celui que tu veux, c'est les mêmes de toute façon
 
 [writeup anglais](./writeup_en.md)
+
 [writeup français](./writeup_fr.md)
 
 Toutes les sources sont disponibles dans [./sources](./sources)
